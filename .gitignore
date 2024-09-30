@@ -1,0 +1,12 @@
+package.json
+.eslintrc.jsonbabel.config.json
+node_modules/
+*main.js
+
+
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
