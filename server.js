@@ -6,7 +6,7 @@ const dbClient = require('./utils/db');
 const PORT = process.env.PORT || 5000
 
 app.use(express.json());
-app.use('/api', routes);
+app.use(routes);
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
