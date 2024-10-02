@@ -1,4 +1,4 @@
-const redisclient = require('../utils.redis');
+const dbClient = require('../utils/db');
 const sha1 = require('sha1');
 
 class UsersController {
