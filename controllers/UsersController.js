@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 const dbClient = require('../utils/db');
 const sha1 = require('sha1');
 
@@ -34,3 +34,8 @@ class UsersController {
 }
 
 module.exports = UsersController;
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+})
