@@ -1,5 +1,10 @@
+const express = require('express');
+const bodyParser = require('body-parser')
 const dbClient = require('../utils/db');
 const sha1 = require('sha1');
+
+const app = express();
+app.use(bodyParser.json());
 
 class UsersController {
     static async postNew(req, res) {
